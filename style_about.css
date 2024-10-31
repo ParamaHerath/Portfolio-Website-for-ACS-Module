@@ -1,0 +1,57 @@
+#quick-info-container {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+#image {
+    margin-right: 3rem;
+    margin-bottom: 0.75rem;
+    /* border: 10px solid white; */
+    /* display: inline-block; */
+    float: left;
+}
+
+#image-1 {
+    width: 24rem;
+    
+}
+
+#about-container p{
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* #details-container h2{
+    margin-bottom: 3rem;
+}
+
+#details-container p{
+    font-size: 1.35rem;
+} */
+
+#expertise-divisions {
+    /* display: flex; */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    /* border: 1px solid white; */
+}
+
+.expertise-section {
+    /* flex: 1; */
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
+    padding-right: 3rem;
+    padding: 3rem;
+    /* border-right: 0.1rem solid white; */
+}
+
+.expertise-section:nth-of-type(4),
+.expertise-section:nth-of-type(5),
+.expertise-section:nth-of-type(6) {
+    border-bottom: 0;
+}
+

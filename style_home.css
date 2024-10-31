@@ -1,0 +1,189 @@
+#quick-info-container {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+#quick-info-container button {
+    font-size: 1.5rem;
+    background-color: gainsboro;
+    font-weight: 600;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+#resume-btn {
+    color: black;
+}
+
+#featurettes {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1rem solid rgba(0, 0, 0, 0.4); */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.featurette {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* overflow: hidden; */
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+    flex-direction: row;
+}
+
+.image-container {
+    width: 70%;
+    /* height: 20rem; */
+    /* padding: 1rem; */
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    /* overflow: hidden; */
+}
+
+.featurette img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.featurette-body {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 3rem;
+    /* background-color: purple; */
+    /* width: 100%; */
+    /* justify-content: center; */
+}
+
+#featurettes :nth-of-type(4) {
+    border-bottom: 0;
+}
+
+#newsletter-form {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#newsletter-form input {
+    padding: 0.5rem;
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+#newsletter-form button {
+    padding: 0.5rem;
+    background-color: rgb(0, 255, 149);
+    color: black;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    border: 0;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+    #quick-info-container {
+        margin-top: 6rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .level1heading {
+        font-size: 2.5rem;
+        /* background-color: green; */
+        padding: 1.5rem;
+    }
+
+    .level1text {
+        font-size: 1rem;
+        /* background-color: green; */
+        padding: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #quick-info-container button {
+        font-size: 1rem;
+        background-color: gainsboro;
+        font-weight: 600;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 0;
+    }
+
+    .level2heading {
+        font-size: 1.85rem;
+    }
+
+    .level2text {
+        margin-top: 0;
+        font-size: 0.85rem;
+    }
+
+    .level3heading{
+        font-size: 1.5rem;
+    }
+    
+    .level3text{
+        font-size: 0.75rem;
+    }
+
+    #featurettes {
+        margin-top: 2rem;
+        /* display: block; */
+        /* flex-direction: column; */
+        /* border: 1rem solid rgba(0, 0, 0, 0.4); */
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .featurette {
+        flex-direction: column; /* Stack vertically */
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+        /* align-items: center; */
+    }
+
+    .image-container, 
+    .featurette-body {
+      width: 100%; /* Take full width */
+    }
+
+    .image-container{
+        padding: 0.765em;
+    }
+
+    .featurette-body{
+        padding: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Ensure image comes first on all featurettes */
+    .featurette:nth-child(even) .image-container {
+        order: -1; /* Move image-container to the top */
+    }
+
+    #newsletter-container {
+        /* background-color: red; */
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #newsletter-form input{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #newsletter-form button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
