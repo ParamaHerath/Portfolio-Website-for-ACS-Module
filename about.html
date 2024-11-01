@@ -35,7 +35,7 @@
             </div>
             <p class="level2text">Hello there! I’m a 2nd-year Computer Science undergraduate at the Informatics Institute of Technology (IIT) in Sri Lanka, affiliated with the University of Westminster, UK. I’m on track to complete my Bachelor’s degree by September 2027, specializing in web and mobile/desktop application design and development. Alongside my studies, I actively work on freelance projects, allowing me to apply my skills to real-world scenarios and collaborate with clients to bring their ideas to life.</p>
             <p class="level2text">My journey into tech began with a passion for problem-solving and an urge to improve the designs I saw around me—whether it was websites, apps, or everyday digital interfaces. Over time, this passion evolved into a clear mission: to build reliable, user-friendly software with sleek and modern UI/UX components that resonate with users. I thrive on crafting solutions that not only function well but also deliver seamless, engaging experiences that make technology feel intuitive and accessible.</p>
-            <p class="level2text">Beyond academics, I enjoy urban photography and exploring cityscapes, finding inspiration in the blend of architecture, people, and vibrant urban life. Watching movies, documentaries, and TV serials, as well as reading books, magazines, blogs and articles, fuels my curiosity and keeps me open to new perspectives. I also enjoy browsing YouTube for tutorials and insights on tech and design, along with light-hearted content like memes, which add a bit of humor and creativity to my day. These varied interests often spark ideas for creative design and user-centered features in my projects, giving me fresh insights into how digital and real-world environments blend to shape meaningful interactions.</p>
+            <p class="level2text">Beyond academics, I enjoy urban photography and exploring cityscapes, finding inspiration in the blend of architecture, people, and vibrant urban life. I love listening to Pop, Hip-Hop, and EDM, which keeps me motivated and upbeat. Watching movies, documentaries, and TV serials, as well as reading books, articles, magazines and blogs, fuel my curiosity and keeps me open to new perspectives. I also enjoy browsing YouTube for tutorials and insights on tech and design, along with light-hearted content like memes, which add a bit of humor and creativity to my day. These varied interests often spark ideas for creative design and user-centered features in my projects, giving me fresh insights into how digital and real-world environments blend to shape meaningful interactions.</p>
             <p class="level2text">Looking ahead, I aspire to create applications that truly enhance everyday life, merging intuitive functionality with a positive social impact. My goal is to build a career where I contribute to developing digital experiences that people trust, enjoy, and rely on, with a strong emphasis on quality, usability, and a modern aesthetic that brings value to users from all walks of life.</p>
         </div>
     </div>
@@ -44,23 +44,29 @@
         <h2 class="level2heading">My Technical Expertise</h2>
         <div id="expertise-divisions">
             <div class="expertise-section">
-                <h3 class="level4heading">Languages</h3>
+                <div class="expertise-topic">
+                    <h3 class="level4heading">Languages</h3>
+                </div>
+                <div class="expertise-content">
+                    <p class="level3text">Python, Java, HTML, CSS, JavaScript, TypeScript, SQL</p>
+                </div>
             </div>
             <div class="expertise-section">
-                <h3 class="level4heading">Libraries & Frameworks</h3>
+                <div class="expertise-topic">
+                    <h3 class="level4heading">Libraries & Frameworks</h3>
+                </div>
+                <div class="expertise-content">
+                    <p class="level3text">Bootstrap | React | Angular | Node.js</p>
+                </div>
             </div>
             <div class="expertise-section">
-                <h3 class="level4heading">Development Tools</h3>
-            </div>
-            <div class="expertise-section">
-                <p>Python, Java, HTML, CSS, JavaScript, TypeScript, SQL</p>
-            </div>
-            <div class="expertise-section">
-                <p>Bootstrap | React | Angular | Node.js</p>
-            </div>
-            <div class="expertise-section">
-                <p>Git | GitHub | Visual Studio Code | pip | npm </p>
-            </div>
+                <div class="expertise-topic">
+                    <h3 class="level4heading">Development Tools</h3>
+                </div>          
+                <div class="expertise-content">
+                    <p class="level3text">Git | GitHub | Visual Studio Code | pip | npm </p>
+                </div>
+            </div>            
         </div>
     </div>
 
@@ -68,11 +74,15 @@
         <h2 class="level2heading">Connect with me Today!</h2>
         <p class="level2text">Thank you for visiting my portfolio! If you have any questions, feedback, or just want to talk about a potential collaboration, I’d love to hear from you. Please fill out the form below, and I’ll get back to you as soon as possible. Your thoughts and ideas are always welcome!</p>
         <form action="" method="POST" id="message-form">
-            <input type="text" name="name" placeholder="First Name"><br>
-            <input type="email" name="email" placeholder="Email - example@domain.com"><br>
-            <input type="text" name="subject" placeholder="Subject"><br>
-            <input type="textarea" name="message" placeholder="Your message"><br>
-            <button type="submit">Submit</button>
+            <div class="form-label"><label for="name">Your Name</label></div>
+            <input type="text" id="name" name="name" placeholder="ex: John Doe"><br>
+            <div class="form-label"><label for="email">Your Email</label></div>
+            <input type="email" id="email" name="email" placeholder="ex: example@domain.com"><br>
+            <div class="form-label"><label for="subject">Subject</label></div>
+            <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+            <div class="form-label"><label for="message">Message</label></div>
+            <textarea name="message" placeholder="Your message"></textarea><br>
+            <button type="submit">Send Message</button>
         </form>
     </div>
     

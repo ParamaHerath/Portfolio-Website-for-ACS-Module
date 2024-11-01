@@ -62,55 +62,16 @@
     border-bottom: 0;
 }
 
-#newsletter-form {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-#newsletter-form input {
-    padding: 0.5rem;
-    color: black;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    border-radius: 0.5rem;
-    border: 0;
-}
-
-#newsletter-form button {
-    padding: 0.5rem;
-    background-color: rgb(0, 255, 149);
-    color: black;
-    border-radius: 0.5rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    border: 0;
-}
 
 
 /* Media Queries */
 
 @media (max-width: 576px) {
     #quick-info-container {
-        margin-top: 6rem;
+        margin-top: 7rem;
         margin-bottom: 3.5rem;
     }
-
-    .level1heading {
-        font-size: 2.5rem;
-        /* background-color: green; */
-        padding: 1.5rem;
-    }
-
-    .level1text {
-        font-size: 1rem;
-        /* background-color: green; */
-        padding: 0rem;
-        margin-bottom: 1.5rem;
-    }
-
+ 
     #quick-info-container button {
         font-size: 1rem;
         background-color: gainsboro;
@@ -118,23 +79,6 @@
         padding: 1rem;
         border-radius: 0.5rem;
         border: 0;
-    }
-
-    .level2heading {
-        font-size: 1.85rem;
-    }
-
-    .level2text {
-        margin-top: 0;
-        font-size: 0.85rem;
-    }
-
-    .level3heading{
-        font-size: 1.5rem;
-    }
-    
-    .level3text{
-        font-size: 0.75rem;
     }
 
     #featurettes {
@@ -175,15 +119,5 @@
         /* background-color: red; */
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
-    }
-
-    #newsletter-form input{
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    #newsletter-form button {
-        width: 100%;
-        font-size: 1rem;
     }
 }

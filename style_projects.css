@@ -1,5 +1,6 @@
 #title {
-    margin-top: 10rem;
+    margin-top: 7rem;
+    text-align: center;
 }
 
 #featurettes {
@@ -46,4 +47,31 @@
 
 #featurettes :nth-of-type(6) {
     border-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .featurette {
+        flex-direction: column; /* Stack vertically */
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+        /* align-items: center; */
+    }
+
+    .image-container, 
+    .featurette-body {
+      width: 100%; /* Take full width */
+    }
+
+    .image-container{
+        padding: 0.765em;
+    }
+
+    .featurette-body{
+        padding: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Ensure image comes first on all featurettes */
+    .featurette:nth-child(even) .image-container {
+        order: -1; /* Move image-container to the top */
+    }
 }

@@ -83,6 +83,54 @@ nav a {
     font-size: 1.75rem;
 }
 
+.level4text{
+    font-size: 1.05rem;
+}
+
+form {
+    /* text-align: center; */
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    /* border: 1px solid white; */
+}
+
+.form-label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.85rem;
+    /* text-align: left; */
+}
+
+form input, textarea {
+    padding: 0.5rem;
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0;
+    
+}
+
+form textarea {
+    resize: vertical;
+    height: 10rem;
+}
+
+form button {
+    padding: 0.5rem;
+    background-color: rgb(0, 255, 149);
+    /* background: linear-gradient(to right, rgb(0, 255, 149), rgb(0, 149, 255)); */
+    color: black;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 0;
+}
+
 footer {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(0.5rem);
@@ -149,6 +197,56 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0rem 0.8rem 0rem 0.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .level1heading {
+        font-size: 2.5rem;
+        /* background-color: green; */
+        padding: 1.5rem;
+    }
+
+    .level1text {
+        font-size: 1rem;
+        /* background-color: green; */
+        padding: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .level2heading {
+        font-size: 1.85rem;
+    }
+
+    .level2text {
+        margin-top: 0;
+        font-size: 0.85rem;
+    }
+
+    .level3heading{
+        font-size: 1.5rem;
+    }
+    
+    .level3text{
+        font-size: 0.75rem;
+    }
+
+    .level4heading{
+        font-size: 1.25rem;
+    }
+    
+
+    form {
+        width: 100%;
+    }
+
+    form input{
+        font-size: 1rem;
+        /* width: 100%; */
+    }
+
+    form button {
+        /* width: 100%; */
+        font-size: 1.25rem;
     }
     
     #footer-container {
