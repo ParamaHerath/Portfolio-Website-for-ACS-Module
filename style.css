@@ -47,124 +47,87 @@ nav a {
     max-width: 1400px; 
     margin: 0 auto; /* Center align */
     padding: 3rem;
-    /* background-color: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(10px);
-    border: 0.1rem solid rgba(255, 255, 255, 0.5); */
-    /* border-radius: 0.75rem; */
     margin-bottom: 3rem;
+    /* border: 1px solid white; */
 }
 
-#quick-info-container {
-    /* max-width: 1920px; */
-    margin-top: 7rem;
-    text-align: center;
-}
-
-#quick-info-container h1 {
+.level1heading{
     font-size: 3.5rem;
-    /* background-color: green; */
     padding: 1.5rem;
 }
 
-#quick-info-container p {
+.level1text{
     font-size: 1.5rem;
-    /* background-color: green; */
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-#quick-info-container button {
-    font-size: 1.5rem;
-    background-color: gainsboro;
-    font-weight: 600;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    border: 0;
-}
-
-#resume-btn {
-    color: black;
-}
-
-.subtopics {
+.level2heading{
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.descriptions {
-    margin-top: 1rem;
+.level2text{
     font-size: 1.25rem;
 }
 
-#featurettes {
+.level3heading{
+    font-size: 2rem;
+}
+
+.level3text{
+    font-size: 1.15rem;
+}
+
+.level4heading{
+    font-size: 1.75rem;
+}
+
+.level4text{
+    font-size: 1.05rem;
+}
+
+form {
+    /* text-align: center; */
+    width: 50%;
+    margin: 0 auto;
     margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    /* border: 1rem solid rgba(0, 0, 0, 0.4); */
-    border-radius: 0.5rem;
-    overflow: hidden;
+    /* border: 1px solid white; */
 }
 
-.featurette {
-    display: flex;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* overflow: hidden; */
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
-    flex-direction: row;
+.form-label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.85rem;
+    /* text-align: left; */
 }
 
-.image-container {
-    width: 70%;
-    /* height: 20rem; */
-    /* padding: 1rem; */
-    padding: 1rem 1rem 1rem 1rem;
-    border-radius: 0.5rem;
-    /* overflow: hidden; */
-}
-
-.featurette img {
-    object-fit: cover;
-    width: 100%;
-}
-
-.featurette-body {
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-    padding: 3rem;
-    /* background-color: purple; */
-    /* width: 100%; */
-    /* justify-content: center; */
-}
-
-#featurettes :nth-of-type(4) {
-    border-bottom: 0;
-}
-
-#newsletter-form {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-#newsletter-form input {
+form input, textarea {
     padding: 0.5rem;
     color: black;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
-    width: 50%;
+    margin-bottom: 2rem;
+    width: 100%;
     border-radius: 0.5rem;
     border: 0;
+    
 }
 
-#newsletter-form button {
+form textarea {
+    resize: vertical;
+    height: 10rem;
+}
+
+form button {
     padding: 0.5rem;
     background-color: rgb(0, 255, 149);
+    /* background: linear-gradient(to right, rgb(0, 255, 149), rgb(0, 149, 255)); */
     color: black;
     border-radius: 0.5rem;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
-    width: 50%;
+    width: 100%;
     border: 0;
 }
 
@@ -192,46 +155,26 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-#footer-container ul, p {
+/* #footer-container ul, p {
+    padding-top: 1.5rem;
+} */
+
+#footer-container ul {
     padding-top: 1.5rem;
 }
 
-/* #footer-container div:nth-child(2){
-    text-align: center;
+#footer-container p {
+    padding-top: 1.5rem;
 }
-
-#footer-container div:nth-child(3){
-    text-align: right;
-} */
 
 #legal-notice-container {
     text-align: center;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     margin-bottom: 0;
 }
 
 
-
-
-
 /* Media Queries */
-
-
-@media (max-width: 992px) {
-    /* header {
-        padding: 1.15rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    #hamburger-menu-btn {
-        font-size: 1.75rem;
-    }
-    nav a {
-        font-size: 0.9rem;
-        margin-left: 1rem;
-    } */
-}
 
 @media (max-width: 576px) {
     #logo {
@@ -254,94 +197,58 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0rem 0.8rem 0rem 0.8rem;
-    }
-    
-    #quick-info-container {
-        margin-top: 6rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 3rem;
     }
 
-    #quick-info-container h1 {
+    .level1heading {
         font-size: 2.5rem;
         /* background-color: green; */
         padding: 1.5rem;
     }
 
-    #quick-info-container p {
+    .level1text {
         font-size: 1rem;
         /* background-color: green; */
         padding: 0rem;
         margin-bottom: 1.5rem;
     }
 
-    #quick-info-container button {
-        font-size: 1rem;
-        background-color: gainsboro;
-        font-weight: 600;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border: 0;
-    }
-
-    .subtopics {
+    .level2heading {
         font-size: 1.85rem;
     }
 
-    .descriptions {
+    .level2text {
         margin-top: 0;
         font-size: 0.85rem;
     }
 
-    #featurettes {
-        margin-top: 2rem;
-        /* display: block; */
-        /* flex-direction: column; */
-        /* border: 1rem solid rgba(0, 0, 0, 0.4); */
-        border-radius: 0.5rem;
-        overflow: hidden;
+    .level3heading{
+        font-size: 1.5rem;
+    }
+    
+    .level3text{
+        font-size: 0.75rem;
     }
 
-    .featurette {
-        flex-direction: column; /* Stack vertically */
-        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
-        /* align-items: center; */
+    .level4heading{
+        font-size: 1.25rem;
     }
+    
 
-    .image-container, 
-    .featurette-body {
-      width: 100%; /* Take full width */
-    }
-
-    .image-container{
-        padding: 0.765em;
-    }
-
-    .featurette-body{
-        padding: 2rem;
-        padding-bottom: 3rem;
-    }
-
-    /* Ensure image comes first on all featurettes */
-    .featurette:nth-child(even) .image-container {
-        order: -1; /* Move image-container to the top */
-    }
-
-    #newsletter-container {
-        /* background-color: red; */
-        margin-top: 3.5rem;
-        margin-bottom: 3.5rem;
-    }
-
-    #newsletter-form input{
-        font-size: 1rem;
+    form {
         width: 100%;
     }
 
-    #newsletter-form button {
-        width: 100%;
+    form input{
         font-size: 1rem;
+        /* width: 100%; */
     }
 
+    form button {
+        /* width: 100%; */
+        font-size: 1.25rem;
+    }
+    
     #footer-container {
         display: block;
         padding-top: 0rem;
@@ -366,17 +273,23 @@ footer {
 
     #footer-container ul, p {
         padding-top: 0;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    #footer-container p {
+        padding-top: 0;
     }
 
     #legal-notice-container {
         text-align: center;
         padding: 3rem;
         margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #legal-notice-container p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 }
 
