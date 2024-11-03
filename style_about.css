@@ -3,6 +3,37 @@
     text-align: center;
 }
 
+.designation {
+    overflow: hidden;
+    height: 2.5rem;
+}
+
+.designation div div {
+    display: inline-block;
+    margin-bottom: 2rem;
+    /* background: red; */
+}
+
+.designation div:nth-child(1){
+    animation: slide 8s linear infinite;
+}
+
+@keyframes slide {
+    0% {margin-top: 0rem;}         /* Show "Web Developer" */
+    20% {margin-top: 0rem;}        /* Hold */
+    
+    25% {margin-top: -4rem;}       /* Show "UI/UX Enthusiast" */
+    45% {margin-top: -4rem;}       /* Hold */
+    
+    50% {margin-top: -8rem;}       /* Show "Undergraduate" */
+    70% {margin-top: -8rem;}       /* Hold */
+    
+    75% {margin-top: -12rem;}      /* Show "Binge Watcher" */
+    95% {margin-top: -12rem;}      /* Hold */
+    
+    100% {margin-top: -16rem;}       /* Loop back to "Web Developer" */
+}
+
 #image {
     margin-right: 3rem;
     margin-bottom: 0.75rem;
