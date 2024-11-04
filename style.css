@@ -130,10 +130,10 @@ nav a {
 }
 
 .project a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0.5rem 2rem 0.5rem 2rem;
-    margin-top: 5rem;
-    margin-left: 8rem; 
+    margin-top: 20%;
+    /* margin-left: 8rem;  */
 }
 
 .project-thumbnail {
@@ -155,7 +155,7 @@ nav a {
 }
 
 .project-body h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 20%;
 }
 
 .project-showcase :nth-of-type(6) {
@@ -388,7 +388,7 @@ footer {
 }
 
 #footer-container div {
-    width: 25%;
+    width: 33%;
     /* border: 1px solid white; */
     /* text-align: center; */
 }
@@ -408,6 +408,8 @@ footer {
     text-align: center;
     /* padding-top: 1.5rem; */
     margin-bottom: 0;
+    /* border: 1px solid white; */
+    padding: 2rem;
 }
 
 /* New Styles */
@@ -451,7 +453,100 @@ footer {
 
 
 
+
+
 /* Media Queries */
+@media (max-width: 1400px) {
+    .project-thumbnail {
+        width: 55%;
+    }
+
+    .project-body {
+        width: 45%;;
+    }
+
+    .project-body h2 {
+        margin-bottom: 10%;
+    }
+
+    .project a {
+        margin-top: 10%;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    .project-body-text{
+        max-height: 100%; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical;
+    }
+
+    .level3heading{
+        font-size: 1.5rem;
+        
+    }
+    
+    .level3text{
+        font-size: 0.9rem;
+    }
+
+    .project-body h2 {
+        margin-bottom: 7.5%;
+    }
+
+    .project-body a {
+        margin-top: 7.5%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    #projects-showcase {
+        margin-top: 2rem;
+    }
+
+    .project {
+        flex-direction: column; /* Stack vertically */
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+        /* align-items: center; */
+    }
+
+    .project-thumbnail, .project-body {
+      width: 100%; /* Take full width */
+    }
+
+    .project-thumbnail{
+        padding: 0.765em;
+    }
+
+    .project-body{
+        padding: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .project-body h2 {
+        margin-bottom: 10%;
+    }
+
+    .project-body a {
+        font-size: 1rem;
+        margin-top: 10%;
+    }
+
+    /* Ensure image comes first on all featurettes */
+    .project:nth-child(even) .project-thumbnail {
+        order: -1; /* Move image-container to the top */
+    }    
+}
 
 @media (max-width: 768px) {
     #logo {
@@ -504,7 +599,7 @@ footer {
     }
     
     .level3text{
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     .level4heading{
@@ -521,38 +616,6 @@ footer {
         padding: 1rem;
     }
 
-    #projects-showcase {
-        margin-top: 2rem;
-    }
-
-    .project {
-        flex-direction: column; /* Stack vertically */
-        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
-        /* align-items: center; */
-    }
-
-    .project-thumbnail, .project-body {
-      width: 100%; /* Take full width */
-    }
-
-    .project-thumbnail{
-        padding: 0.765em;
-    }
-
-    .project-body{
-        padding: 2rem;
-        padding-bottom: 3rem;
-    }
-
-    .project-body a {
-        margin-left: 15rem;
-    }
-
-    /* Ensure image comes first on all featurettes */
-    .project:nth-child(even) .project-thumbnail {
-        order: -1; /* Move image-container to the top */
-    }
-
     form {
         width: 100%;
     }
@@ -562,7 +625,7 @@ footer {
     }
 
     button[type="submit"] {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     /* #newsletter-container {
@@ -649,13 +712,18 @@ footer {
         font-size: 0.85rem;
     }
 
+    /* #footer-container li {
+        display: inline;
+        margin-right: 1rem;
+    } */
+
     #footer-container p {
         padding-top: 0;
     }
 
     #legal-notice-container {
         text-align: center;
-        padding: 3rem;
+        padding: 2rem;
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
@@ -663,6 +731,10 @@ footer {
 
     #legal-notice-container p {
         font-size: 0.7rem;
+    }
+
+    #social-links {
+        font-size: 1.5rem;
     }
 }
 
