@@ -96,11 +96,11 @@ nav a {
     border-radius: 0.5rem;
     background-color: white;
     text-align: center;
+    transition: transform 0.25s ease;
 }
 
 .btn-link:hover {
-    transform: scale(1.025);
-    transition: 0.1s ease;
+    transform: scale(1.075);
 }
 
 .intro {
@@ -409,6 +409,46 @@ footer {
     /* padding-top: 1.5rem; */
     margin-bottom: 0;
 }
+
+/* New Styles */
+#social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    
+    padding: 1rem 0 1rem 0;
+}
+
+#social-links a i{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.01rem solid rgba(255, 255, 255, 0.4);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: transform 0.25s ease;
+}
+
+#social-links a i:hover{
+    transform: scale(1.075);
+}
+
+#social-links a:nth-child(1):hover i { 
+    background-color: #0077b5; /* LinkedIn */
+}
+#social-links a:nth-child(2):hover i { 
+    background-color: #181717; /* GitHub */
+}
+#social-links a:nth-child(3):hover i { 
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); /* Instgram */
+}
+#social-links a:nth-child(4):hover i { 
+    background-color: #25D366; /* WhatsApp */
+}
+#social-links a:nth-child(5):hover i { 
+    background-color: #FF0000; /* YouTube */
+}
+
 
 
 /* Media Queries */
