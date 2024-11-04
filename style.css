@@ -385,10 +385,14 @@ footer {
     padding-top: 5rem;
     margin-bottom: 0;
     display: flex;
+    /* justify-content: space-between; */
+    /* gap: 22rem; */
 }
 
 #footer-container div {
     width: 33%;
+    padding-left: 3rem;
+    padding-right: 3rem;
     /* border: 1px solid white; */
     /* text-align: center; */
 }
@@ -400,9 +404,17 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+#footer-container p a {
+    /* border: 1px solid white; */
+    display: inline-block;
+    width: 5rem;
+}
+
 #footer-container ul, #footer-container p {
     padding-top: 1.5rem;
 }
+
+
 
 #legal-notice-container {
     text-align: center;
@@ -710,6 +722,12 @@ footer {
     #footer-container ul, p {
         padding-top: 0;
         font-size: 0.85rem;
+    }
+
+    #footer-container p a {
+        /* border: 1px solid white; */
+        display: inline-block;
+        width: 5rem;
     }
 
     /* #footer-container li {
