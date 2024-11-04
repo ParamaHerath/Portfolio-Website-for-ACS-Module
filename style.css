@@ -43,7 +43,7 @@ nav a {
 }
 
 .container {
-    width: 90%; 
+    width: 100%; 
     max-width: 1400px; 
     margin: 0 auto; /* Center align */
     padding: 3rem;
@@ -53,7 +53,7 @@ nav a {
 
 .level1heading{
     font-size: 3.5rem;
-    padding: 1.5rem;
+    padding: 1.5rem; 
 }
 
 .level1text{
@@ -65,6 +65,7 @@ nav a {
 .level2heading{
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
 }
 
 .level2text{
@@ -87,19 +88,94 @@ nav a {
     font-size: 1.05rem;
 }
 
+.btn-link {
+    color: black;
+    display: inline-block;
+    font-weight: 700;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: white;
+    text-align: center;
+}
+
+.btn-link:hover {
+    transform: scale(1.025);
+    transition: 0.1s ease;
+}
+
+.intro {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.intro a {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.project-showcase {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.project {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+    flex-direction: row;
+}
+
+.project a {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: 5rem;
+    margin-left: 8rem; 
+}
+
+.project-thumbnail {
+    width: 70%;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.project img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-body {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.project-body h2 {
+    margin-bottom: 3rem;
+}
+
+.project-showcase :nth-of-type(6) {
+    border-bottom: 0;
+}
+
+.project-showcase-home :nth-of-type(3) {
+    border-bottom: 0;
+}
+
 form {
-    /* text-align: center; */
     width: 50%;
     margin: 0 auto;
     margin-top: 3rem;
-    /* border: 1px solid white; */
 }
 
 .form-label {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.85rem;
-    /* text-align: left; */
 }
 
 form input, textarea {
@@ -109,8 +185,19 @@ form input, textarea {
     margin-bottom: 2rem;
     width: 100%;
     border-radius: 0.5rem;
-    border: 0;
-    
+    /* border: 0; */
+}
+
+form input:valid {
+    border: 0.25rem solid rgb(0, 255, 149);
+}
+
+form input:invalid {
+    border: 0.25rem solid red;
+}
+
+form input:invalid:placeholder-shown {
+    border: none;
 }
 
 form textarea {
@@ -118,10 +205,9 @@ form textarea {
     height: 10rem;
 }
 
-form button {
+button[type="submit"] {
     padding: 0.5rem;
     background-color: rgb(0, 255, 149);
-    /* background: linear-gradient(to right, rgb(0, 255, 149), rgb(0, 149, 255)); */
     color: black;
     border-radius: 0.5rem;
     font-weight: 700;
@@ -129,6 +215,165 @@ form button {
     margin-bottom: 1rem;
     width: 100%;
     border: 0;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(46, 223, 149);
+    cursor: pointer;
+}
+
+#animated-heading {
+    overflow: hidden;
+    height: 2.5rem;
+}
+
+#animated-heading div div {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+#animated-heading div:nth-child(1){
+    animation: slide-up 8s linear infinite;
+}
+
+@keyframes slide-up {
+    0% {margin-top: 0rem;}         /* Show "Web Developer" */
+    20% {margin-top: 0rem;}        /* Hold */
+    
+    25% {margin-top: -4rem;}       /* Show "UI/UX Enthusiast" */
+    45% {margin-top: -4rem;}       /* Hold */
+    
+    50% {margin-top: -8rem;}       /* Show "Undergraduate" */
+    70% {margin-top: -8rem;}       /* Hold */
+    
+    75% {margin-top: -12rem;}      /* Show "Binge Watcher" */
+    95% {margin-top: -12rem;}      /* Hold */
+    
+    100% {margin-top: -16rem;}       /* Loop back to "Web Developer" */
+}
+
+#photo-container {
+    margin-right: 3rem;
+    margin-bottom: 0.75rem;
+    float: left;
+}
+
+#photo {
+    width: 24rem;
+}
+
+#about-container p{
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+#expertise-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.expertise-section {
+    display: flex;
+    flex: 1 1 33%;
+    flex-direction: column;
+    padding-right: 3rem;
+    padding: 3rem;
+    border-right: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+.expertise-section:nth-of-type(3) {
+    border-right: 0;
+}
+
+.expertise-topic{
+    margin-bottom: 2rem;
+}
+
+#message-container {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+#blog-logo-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 5rem;
+    color: rgb(0, 255, 149);
+    text-shadow: 1rem 0.5rem 1.5rem rgb(0, 119, 255);
+}
+
+.content-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+article > h3 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+article > p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+article p:nth-of-type(1){
+    border-bottom: 1px solid white;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#more-posts-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between; 
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+aside:nth-of-type(1){
+    background: linear-gradient(45deg, rgba(60, 255, 0, 0.8), rgba(0, 0, 255, 0.8));
+}
+
+aside:nth-of-type(2){
+    background: linear-gradient(45deg, rgba(255, 200, 0, 0.8), rgba(255, 0, 0, 0.8));
+}
+
+aside:nth-of-type(3){
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.8), rgba(255, 0, 106, 0.8));
+}
+
+aside > h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    
+}
+
+aside > p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+aside p:nth-of-type(1){
+    border-bottom: 1px solid white;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+aside a{
+    margin-left: 0;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 footer {
@@ -155,15 +400,7 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* #footer-container ul, p {
-    padding-top: 1.5rem;
-} */
-
-#footer-container ul {
-    padding-top: 1.5rem;
-}
-
-#footer-container p {
+#footer-container ul, #footer-container p {
     padding-top: 1.5rem;
 }
 
@@ -176,7 +413,7 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     #logo {
         font-size: 1.6rem;
         padding: 1rem;
@@ -234,19 +471,115 @@ footer {
         font-size: 1.25rem;
     }
     
+    .intro {
+        margin-top: 7rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .intro a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    #projects-showcase {
+        margin-top: 2rem;
+    }
+
+    .project {
+        flex-direction: column; /* Stack vertically */
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+        /* align-items: center; */
+    }
+
+    .project-thumbnail, .project-body {
+      width: 100%; /* Take full width */
+    }
+
+    .project-thumbnail{
+        padding: 0.765em;
+    }
+
+    .project-body{
+        padding: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .project-body a {
+        margin-left: 15rem;
+    }
+
+    /* Ensure image comes first on all featurettes */
+    .project:nth-child(even) .project-thumbnail {
+        order: -1; /* Move image-container to the top */
+    }
 
     form {
         width: 100%;
     }
 
-    form input{
+    form input, textarea{
         font-size: 1rem;
-        /* width: 100%; */
     }
 
-    form button {
-        /* width: 100%; */
+    button[type="submit"] {
         font-size: 1.25rem;
+    }
+
+    /* #newsletter-container {
+        background-color: red;
+        margin-top: 3.5rem;
+    } */
+
+    #animated-heading {
+        height: 1.75rem;
+    }
+
+    #animated-heading div div {
+        margin-bottom: 1.45rem;
+    }
+
+    @keyframes slide-up {
+        0% {margin-top: 0rem;}         /* Show "Web Developer" */
+        20% {margin-top: 0rem;}        /* Hold */
+        
+        25% {margin-top: -3rem;}       /* Show "UI/UX Enthusiast" */
+        45% {margin-top: -3rem;}       /* Hold */
+        
+        50% {margin-top: -6rem;}       /* Show "Undergraduate" */
+        70% {margin-top: -6rem;}       /* Hold */
+        
+        75% {margin-top: -9rem;}      /* Show "Binge Watcher" */
+        95% {margin-top: -9rem;}      /* Hold */
+        
+        100% {margin-top: -12rem;}       /* Loop back to "Web Developer" */
+    }
+
+    #photo-container {
+        margin-right: 0;
+        margin-bottom: 1.6rem;
+        float: none;
+        text-align: center;
+    }
+
+    #photo {
+        width: 90%;
+    }
+
+    #about-container p{
+        text-align: center;
+    }
+
+    #expertise-container {
+        display: block;
+    }
+    
+    .expertise-section {
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
+        border-right: 0;
+    }
+
+    .expertise-section:nth-of-type(3) {
+        border-bottom: 0;
     }
     
     #footer-container {
