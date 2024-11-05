@@ -8,13 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_projects.css">
 </head>
 
 <body>
+    <!-- Header with the Navigation Bar -->
     <header>
         <a href="index.html" id="logo">Parama Herath</a>
         <nav>
@@ -22,12 +21,13 @@
         </nav>
     </header>
 
-    <div class="container intro">
+    <section class="container intro">
         <h1 class="level1heading" id="title">My Projects</h1>
         <p class="level1text">Welcome to my projects page! Here, you’ll find a collection of work reflecting my journey as a Computer Science student. Most projects here were created in my first year or from personal interests. Each has helped build my foundation and deepen my skills. I’m excited to keep this collection growing.</p>
-    </div>
+    </section>
 
-    <div class="container" id="featurettes-container">
+    <!-- (All) Projects Showcase -->
+    <section class="container" id="featured-projects-container" style="margin-top: -6rem;"> <!-- Negative margin to remove the margins of div with project-showcase class inside the section -->
         <div class="project-showcase">
             <div class="project">
                 <div class="project-thumbnail">
@@ -43,7 +43,7 @@
                 <div class="project-body">
                     <h2 class="level3heading">Real-Time Ticketing System</h2>
                     <p class="level3text project-body-text">A full-stack app built with React and Spring Boot to manage event ticket releases and purchases concurrently. Using the Producer-Consumer pattern, it ensures data integrity in a multi-threaded environment, offering real-time availability and seamless booking.</p>
-                    <a href="blogs.html" class="btn-link explore-button"></a>
+                    <a href="https://github.com/ParamaHerath/Real-Time-Event-Ticketing-System-for-OOP-Module" class="btn-link explore-button"></a>
                 </div>
                 <div class="project-thumbnail">
                     <img src="images/project2.png">
@@ -56,14 +56,14 @@
                 <div class="project-body">
                     <h2 class="level3heading">The Wildhaven Initiative Website</h2>
                     <p class="level3text project-body-text">A multi page website, built with HTML, CSS and JavaScript, by a team of 4, for an imaginary organization that is dedicated to United Nation's SDG 15 - Life on Land, featuring a user profile builder, feedback form, gallery, shop, etc.</p>
-                    <a href="blogs.html" class="btn-link explore-button"></a>
+                    <a href="https://github.com/ParamaHerath/The-Wildhaven-Initiative-Website-for-WDD-Module" class="btn-link explore-button"></a>
                 </div>
             </div>
             <div class="project project-reverse">
                 <div class="project-body">
-                    <h2 class="level3heading">Air Ticket Management System</h2>
+                    <h2 class="level3heading">Plane Management System</h2>
                     <p class="level3text project-body-text">A CLI based application written in Java to book, manage, visualize seating plans, print tickets, etc. It makes use of OOP concepts of Objects and Classes to achieve the functionality.</p>
-                    <a href="blogs.html" class="btn-link explore-button"></a>
+                    <a href="https://github.com/ParamaHerath/Plane-Management-System-for-SD2-Module" class="btn-link explore-button"></a>
                 </div>
                 <div class="project-thumbnail">
                     <img src="images/project4.png">
@@ -76,7 +76,7 @@
                 <div class="project-body">
                     <h2 class="level3heading">Student Progression Tracker</h2>
                     <p class="level3text project-body-text">A CLI and semi-GUI based application written in Python to let Students or a Staff member to enter a student's credits at pass, defer and fail and track their outcome. A bar graph graphic is shown after multiple student details are entered.</p>
-                    <a href="blogs.html" class="btn-link explore-button"></a>
+                    <a href="https://github.com/ParamaHerath/Student-Progression-Tracker-for-SD1-Module" class="btn-link explore-button"></a>
                 </div>
             </div>
             <div class="project project-reverse">
@@ -90,8 +90,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
+    <!-- Common Sitewide Footer -->
     <footer>
         <div class="container" id="footer-container">
             <div>
