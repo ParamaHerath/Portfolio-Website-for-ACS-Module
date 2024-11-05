@@ -20,7 +20,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 1.4rem; */
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(0.5rem);
     display: flex;
@@ -48,7 +47,6 @@ nav a {
     margin: 0 auto; /* Center align */
     padding: 3rem;
     margin-bottom: 3rem;
-    /* border: 1px solid white; */
 }
 
 .level1heading{
@@ -64,7 +62,7 @@ nav a {
 
 .level2heading{
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
 }
 
@@ -133,7 +131,6 @@ nav a {
     font-size: 1.25rem;
     padding: 0.5rem 2rem 0.5rem 2rem;
     margin-top: 20%;
-    /* margin-left: 8rem;  */
 }
 
 .project-thumbnail {
@@ -166,6 +163,49 @@ nav a {
     border-bottom: 0;
 }
 
+/* Using after pseudo element to add generated content */
+.explore-button::after{
+    content: "Explore";
+}
+
+#social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    
+    padding: 1rem 0 1rem 0;
+}
+
+#social-links a i{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.01rem solid rgba(255, 255, 255, 0.4);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: transform 0.25s ease;
+}
+
+#social-links a i:hover{
+    transform: scale(1.075);
+}
+
+#social-links a:nth-child(1):hover i { 
+    background-color: #0077b5; /* LinkedIn */
+}
+#social-links a:nth-child(2):hover i { 
+    background-color: #181717; /* GitHub */
+}
+#social-links a:nth-child(3):hover i { 
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); /* Instgram */
+}
+#social-links a:nth-child(4):hover i { 
+    background-color: #25D366; /* WhatsApp */
+}
+#social-links a:nth-child(5):hover i { 
+    background-color: #FF0000; /* YouTube */
+}
+
 form {
     width: 50%;
     margin: 0 auto;
@@ -185,7 +225,6 @@ form input, textarea {
     margin-bottom: 2rem;
     width: 100%;
     border-radius: 0.5rem;
-    /* border: 0; */
 }
 
 form input:valid {
@@ -239,17 +278,13 @@ button[type="submit"]:hover{
 @keyframes slide-up {
     0% {margin-top: 0rem;}         /* Show "Web Developer" */
     20% {margin-top: 0rem;}        /* Hold */
-    
     25% {margin-top: -4rem;}       /* Show "UI/UX Enthusiast" */
     45% {margin-top: -4rem;}       /* Hold */
-    
     50% {margin-top: -8rem;}       /* Show "Undergraduate" */
     70% {margin-top: -8rem;}       /* Hold */
-    
     75% {margin-top: -12rem;}      /* Show "Binge Watcher" */
     95% {margin-top: -12rem;}      /* Hold */
-    
-    100% {margin-top: -16rem;}       /* Loop back to "Web Developer" */
+    100% {margin-top: -16rem;}     /* Loop back to "Web Developer" */
 }
 
 #photo-container {
@@ -355,7 +390,6 @@ aside > h3 {
     font-size: 1.3rem;
     font-weight: 700;
     padding-bottom: 1.5rem;
-    
 }
 
 aside > p {
@@ -385,27 +419,21 @@ footer {
     padding-top: 5rem;
     margin-bottom: 0;
     display: flex;
-    /* justify-content: space-between; */
-    /* gap: 22rem; */
 }
 
 #footer-container div {
     width: 33%;
     padding-left: 3rem;
     padding-right: 3rem;
-    /* border: 1px solid white; */
-    /* text-align: center; */
 }
 
 #footer-container div h3{
-    /* text-align: center; */
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 #footer-container p a {
-    /* border: 1px solid white; */
     display: inline-block;
     width: 5rem;
 }
@@ -414,60 +442,17 @@ footer {
     padding-top: 1.5rem;
 }
 
-
-
 #legal-notice-container {
     text-align: center;
-    /* padding-top: 1.5rem; */
     margin-bottom: 0;
-    /* border: 1px solid white; */
     padding: 2rem;
 }
-
-/* New Styles */
-#social-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    font-size: 3rem;
-    
-    padding: 1rem 0 1rem 0;
-}
-
-#social-links a i{
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 0.01rem solid rgba(255, 255, 255, 0.4);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    transition: transform 0.25s ease;
-}
-
-#social-links a i:hover{
-    transform: scale(1.075);
-}
-
-#social-links a:nth-child(1):hover i { 
-    background-color: #0077b5; /* LinkedIn */
-}
-#social-links a:nth-child(2):hover i { 
-    background-color: #181717; /* GitHub */
-}
-#social-links a:nth-child(3):hover i { 
-    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); /* Instgram */
-}
-#social-links a:nth-child(4):hover i { 
-    background-color: #25D366; /* WhatsApp */
-}
-#social-links a:nth-child(5):hover i { 
-    background-color: #FF0000; /* YouTube */
-}
-
-
 
 
 
 /* Media Queries */
+
+/* Media Queries for sub-desktop screens*/
 @media (max-width: 1400px) {
     .project-thumbnail {
         width: 55%;
@@ -486,7 +471,7 @@ footer {
     }
 }
 
-
+/* Media Queries for large and medium tablets*/
 @media (min-width: 992px) and (max-width: 1280px) {
     .project-body-text{
         max-height: 100%; 
@@ -521,6 +506,7 @@ footer {
     }
 }
 
+/* Media Queries for small tablets*/
 @media (max-width: 992px) {
     #projects-showcase {
         margin-top: 2rem;
@@ -529,11 +515,10 @@ footer {
     .project {
         flex-direction: column; /* Stack vertically */
         border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
-        /* align-items: center; */
     }
 
     .project-thumbnail, .project-body {
-      width: 100%; /* Take full width */
+      width: 100%;
     }
 
     .project-thumbnail{
@@ -554,12 +539,13 @@ footer {
         margin-top: 10%;
     }
 
-    /* Ensure image comes first on all featurettes */
+    /* Ensure image comes first on all projects */
     .project:nth-child(even) .project-thumbnail {
-        order: -1; /* Move image-container to the top */
+        order: -1; /* Moves image-container to the top */
     }    
 }
 
+/* Media Queries for phones*/
 @media (max-width: 768px) {
     #logo {
         font-size: 1.6rem;
@@ -586,13 +572,11 @@ footer {
 
     .level1heading {
         font-size: 2.5rem;
-        /* background-color: green; */
         padding: 1.5rem;
     }
 
     .level1text {
         font-size: 1rem;
-        /* background-color: green; */
         padding: 0rem;
         margin-bottom: 1.5rem;
     }
@@ -640,11 +624,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* #newsletter-container {
-        background-color: red;
-        margin-top: 3.5rem;
-    } */
-
     #animated-heading {
         height: 1.75rem;
     }
@@ -656,17 +635,13 @@ footer {
     @keyframes slide-up {
         0% {margin-top: 0rem;}         /* Show "Web Developer" */
         20% {margin-top: 0rem;}        /* Hold */
-        
         25% {margin-top: -3rem;}       /* Show "UI/UX Enthusiast" */
         45% {margin-top: -3rem;}       /* Hold */
-        
         50% {margin-top: -6rem;}       /* Show "Undergraduate" */
         70% {margin-top: -6rem;}       /* Hold */
-        
-        75% {margin-top: -9rem;}      /* Show "Binge Watcher" */
-        95% {margin-top: -9rem;}      /* Hold */
-        
-        100% {margin-top: -12rem;}       /* Loop back to "Web Developer" */
+        75% {margin-top: -9rem;}       /* Show "Binge Watcher" */
+        95% {margin-top: -9rem;}       /* Hold */
+        100% {margin-top: -12rem;}     /* Loop back to "Web Developer" */
     }
 
     #photo-container {
@@ -696,6 +671,34 @@ footer {
     .expertise-section:nth-of-type(3) {
         border-bottom: 0;
     }
+
+    #more-posts-container{
+        display: block;
+    }
+
+    #blog-logo-text {
+        font-size: 2.5rem;
+    }
+
+    article > h3 {
+        font-size: 1.5rem;
+    }
+    
+    article > p {
+        font-size: 0.8rem;
+    }
+
+    aside > h3 {
+        font-size: 1.15rem;
+    }
+
+    aside > p {
+        font-size: 0.8rem;
+    }
+
+    aside a{
+        font-size: 1rem;
+    }
     
     #footer-container {
         display: block;
@@ -707,12 +710,9 @@ footer {
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
         padding-bottom: 1.5rem;
-        /* border: 1px solid white; */
-        /* text-align: center; */
     }
 
     #footer-container div h3{
-        /* text-align: center; */
         font-size: 1.5rem;
         padding-bottom: 0;
         padding: 1.5rem;
@@ -725,15 +725,9 @@ footer {
     }
 
     #footer-container p a {
-        /* border: 1px solid white; */
         display: inline-block;
         width: 5rem;
     }
-
-    /* #footer-container li {
-        display: inline;
-        margin-right: 1rem;
-    } */
 
     #footer-container p {
         padding-top: 0;
